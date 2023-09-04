@@ -5,12 +5,12 @@
 int main()
 {
   int i=0,p=0;
-  int primes[30]={0};
+  int primes[30]={[0]=2,[1]=3,0};
   bool isPrime = false;
   int index=2;
 
-  primes[0]=2;
-  primes[1]=3;
+//  primes[0]=2;
+ // primes[1]=3;
 
   for(p=5; p <= 100; p=p+2)  
   {
