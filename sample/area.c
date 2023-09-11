@@ -1,7 +1,8 @@
 #include "area.h"
 
-int area(int a, int b)
+int area(int *a, int *b)
 {
-  return a*b;
+  int result = (*a)*(*b);
+  return result;
 }
 

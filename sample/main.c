@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
   //int a=0,b=0;
   //printf("Enter the height and widht of rectanguler:\n");
   //scanf("%d %d",&a,&b);
-  printf("The area of rectangle:%i\n",area(arg2,arg3));
+  printf("The area of rectangle:%i\n",area(&arg2,&arg3));
   return 0;
 
 }
