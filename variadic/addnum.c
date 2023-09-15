@@ -6,7 +6,7 @@ int addnumber(int n, ...);
 int main()
 {
   printf("variadic function\n");
-  printf("Sum of the number is: %d\n",addnumber(3, 15, 15, 15));
+  printf("Sum of the number is: %d\n",addnumber(3, 15, 15, 15, 24));
   return 0;
 
 }
