@@ -21,7 +21,7 @@ int main()
     printf("Inputed text is: %s\n",text);
 
   }
-  free(text);
+ free(text);
   text = NULL;
   return 0;
 
