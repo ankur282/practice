@@ -4,7 +4,7 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 
-#define SIZE 1024
+#define SIZE 1000
 
 struct msgbuf {
   long mtype;       /* message type, must be > 0 */

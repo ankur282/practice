@@ -4,7 +4,7 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 
-#define SIZE 1024
+#define SIZE 1000
  struct msgbuf {
    long mtype;       /* message type, must be > 0 */
    char mtext[SIZE];    /* message data */
@@ -31,13 +31,10 @@ int main() {
 
     while (1) {
         if (msgrcv(msgid, &message, sizeof(message), 1, 0) == -1) {
-            perror("msgrcv");
             exit(1);
         }
 
-        fprintf(fp, "%s",message.mtext);
-        fflush(fp);
-
+        fprintf(fp,"%s",message.mtext);
         printf("data: %s",message.mtext);
     }
 
